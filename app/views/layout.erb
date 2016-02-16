@@ -2,22 +2,21 @@
 <html>
   <head>
     <title>books</title>
+
     <!-- Necessary Angular Scripts -->
     <script src="javascripts/support/Rx.umd.js"></script>
     <script src="javascripts/support/angular2-polyfills.js"></script>
     <script src="javascripts/support/angular2-all.umd.js"></script>
 
-    <!-- Our Javascript Files -->
-
-    <!-- Setting Up JS Environment -->
-    <script src="javascripts/namespace.js"></script>
-    
-    <!-- The App -->
-    <script src="javascripts/hero.js"></script>
-    <script src="javascripts/hero.service.js"></script>
-    <script src="javascripts/hero-form.component.js"></script>
-    <script src="javascripts/app.component.js"></script>
-    <script src="javascripts/boot.js"></script>
+    <!-- services -->
+    <script src="javascripts/services/books.service.js"></script>
+    <!-- models -->
+    <script src="javascripts/models/book.model.js"></script>
+    <!-- components -->
+    <script src="javascripts/components/book-list.component.js"></script>
+    <!-- app -->
+    <script src="javascripts/components/app.component.js"></script>
+    <script src="javascripts/app.js"></script>
   </head>
   <body>
     <%= yield %>
