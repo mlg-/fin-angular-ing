@@ -7,6 +7,7 @@ feature "user views a book" do
       author: "ben kenobi",
       description: "a jedi discusses quantum mechanics as a methodology for understanding the psychosociopolitical ramifications of polarized galactic governmental divides and rebellions armed with sticks"
     )
+
     visit "/"
     click_on "ben's bountiful bosons"
     expect(page).to have_content "ben's bountiful bosons"
