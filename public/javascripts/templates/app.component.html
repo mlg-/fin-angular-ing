@@ -1,0 +1,9 @@
+<hero-form (update)="onUpdate()" ></hero-form>
+<!-- <hero-list [heroes]="heroes"></hero-list> -->
+<ul>
+  <li *ngFor="#hero of heroes">
+    <p> Name: {{hero.name}} </p>
+    <p> Alter Ego: {{hero.alter_ego}} </p>
+    <p> Power: {{hero.power}} </p>
+  </li>
+</ul>
